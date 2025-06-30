@@ -53,7 +53,7 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to PROACHAT Chatbot</h1>
+    <h1>Welcome to PROACHAT Chatbot PreProd</h1>
   </header>
 
   <div class="content">
@@ -79,7 +79,7 @@
       });
   </script>
   <button id="launchChatButton" onclick="launchChat()"> 
-    <img src="https://github.com/chliouiayoub/ProAchatProd/blob/main/logoProAchatBot.png?raw=true"/>
+    <img src="https://github.com/chliouiayoub/ProAchatPreProdClient/blob/main/logoProAchatBot.png?raw=true"/>
   </button>
 
    <script type='text/javascript'>
@@ -91,11 +91,11 @@
                     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields( { "IsSignedIn" : "true" } );
                   });
 			embeddedservice_bootstrap.init(
-				'00D09000007kV6P',
-				'TEST',
-				'https://proachat.my.site.com/ESWTEST1750841362970',
+				'00DAW00000F95O1',
+				'PROACHAT_Preprod_Bot',
+				'https://proachat--proapart.sandbox.my.site.com/ESWPROACHATPreprodBot1751274812466',
 				{
-					scrt2URL: 'https://proachat.my.salesforce-scrt.com'
+					scrt2URL: 'https://proachat--proapart.sandbox.my.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -103,7 +103,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://proachat.my.site.com/ESWTEST1750841362970/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://proachat--proapart.sandbox.my.site.com/ESWPROACHATPreprodBot1751274812466/assets/js/bootstrap.min.js'  onload='initEmbeddedMessaging()'></script>
 <script>
     function launchChat() {
         document.getElementById("launchChatButton").style.display = "none"; // Hide custom button
